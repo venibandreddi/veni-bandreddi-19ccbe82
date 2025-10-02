@@ -78,9 +78,11 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 bg-muted/30">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">
+    <section id="projects" className="py-20 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text animate-slide-up">
           Featured Projects
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -89,14 +91,15 @@ const Projects = () => {
             return (
               <Card 
                 key={index} 
-                className="p-8 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105 gradient-card"
+                className="p-8 shadow-card hover-lift hover-glow gradient-card border border-border/50 backdrop-blur-sm group animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-primary text-primary-foreground p-3 rounded-lg">
+                  <div className="bg-gradient-accent text-primary-foreground p-3 rounded-lg shadow-glow group-hover:scale-110 transition-transform">
                     <Icon className="h-6 w-6" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-primary mb-1">{project.title}</h3>
+                    <h3 className="text-xl font-bold gradient-text mb-1">{project.title}</h3>
                     <p className="text-sm text-secondary font-medium mb-1">{project.role}</p>
                     <p className="text-xs text-muted-foreground">{project.location} • {project.period}</p>
                   </div>

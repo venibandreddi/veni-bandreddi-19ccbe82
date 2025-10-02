@@ -27,9 +27,9 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
+          ? "bg-card/80 backdrop-blur-lg shadow-card border-b border-border/50"
           : "bg-transparent"
       }`}
     >
@@ -37,9 +37,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className={`text-2xl font-bold transition-colors ${
-              isScrolled ? "text-primary" : "text-white"
-            }`}
+            className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
           >
             VNB
           </a>
@@ -50,9 +48,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className={`font-medium transition-colors hover:text-primary ${
-                  isScrolled ? "text-foreground" : "text-white hover:text-white/80"
-                }`}
+                className="font-medium text-foreground/80 hover:text-primary transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-accent after:transition-all hover:after:w-full"
               >
                 {item.label}
               </a>
@@ -63,7 +59,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className={`md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+            className="md:hidden text-foreground hover:text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -72,7 +68,8 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
+          <div className="md:hidden mt-4 pb-4 animate-slide-up">
+
             <div className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <a

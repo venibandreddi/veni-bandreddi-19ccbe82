@@ -37,19 +37,22 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">
+    <section id="certifications" className="py-20 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text animate-slide-up">
           Certifications & Workshops
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <Card 
               key={index} 
-              className="p-6 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105 gradient-card"
+              className="p-6 shadow-card hover-lift hover-glow gradient-card border border-border/50 backdrop-blur-sm group animate-slide-up"
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
               <div className="flex items-start gap-3 mb-3">
-                <div className={`${cert.type === 'certification' ? 'bg-accent' : 'bg-secondary'} text-white p-2 rounded-lg`}>
+                <div className={`${cert.type === 'certification' ? 'bg-gradient-accent' : 'bg-secondary'} text-white p-2 rounded-lg shadow-glow group-hover:scale-110 transition-transform`}>
                   {cert.type === 'certification' ? (
                     <Award className="h-5 w-5" />
                   ) : (
@@ -65,7 +68,7 @@ const Certifications = () => {
                   </Badge>
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary mb-2">{cert.title}</h3>
+              <h3 className="text-lg font-bold gradient-text mb-2">{cert.title}</h3>
               <p className="text-sm text-muted-foreground">{cert.provider}</p>
             </Card>
           ))}

@@ -52,23 +52,26 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">
+    <section id="experience" className="py-20 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text animate-slide-up">
           Professional Experience
         </h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card 
               key={index} 
-              className="p-8 shadow-card hover:shadow-glow transition-all duration-300 gradient-card"
+              className="p-8 shadow-card hover-lift hover-glow gradient-card border border-border/50 backdrop-blur-sm group animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
+                <div className="bg-gradient-accent text-primary-foreground p-3 rounded-lg shadow-glow group-hover:scale-110 transition-transform">
                   <Briefcase className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-primary mb-1">{exp.company}</h3>
+                  <h3 className="text-2xl font-bold gradient-text mb-1">{exp.company}</h3>
                   <p className="text-xl font-semibold text-secondary mb-2">{exp.role}</p>
                   <div className="flex flex-col md:flex-row md:items-center gap-2 text-muted-foreground">
                     <span>{exp.location}</span>

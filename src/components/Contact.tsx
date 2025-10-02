@@ -4,12 +4,14 @@ import { Mail, Phone, Linkedin, MapPin, Download } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-muted/30">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">
+    <section id="contact" className="py-20 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      
+      <div className="max-w-4xl mx-auto relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text animate-slide-up">
           Let's Connect
         </h2>
-        <Card className="p-10 shadow-glow gradient-card">
+        <Card className="p-10 shadow-glow-lg hover-lift gradient-card border border-border/50 backdrop-blur-sm animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <div className="text-center mb-8">
             <p className="text-lg text-foreground/90 mb-6">
               I'm always open to new opportunities, collaborations, and conversations. 
@@ -20,9 +22,9 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <a 
               href="mailto:venibandreddi@gmail.com"
-              className="flex items-center gap-4 p-4 rounded-lg bg-background hover:bg-primary/5 transition-colors group"
+              className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-primary/10 transition-all group hover-lift border border-border/30 hover:border-primary/50"
             >
-              <div className="bg-primary text-primary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-accent text-primary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform shadow-glow">
                 <Mail className="h-6 w-6" />
               </div>
               <div>
@@ -33,9 +35,9 @@ const Contact = () => {
             
             <a 
               href="tel:+17343838389"
-              className="flex items-center gap-4 p-4 rounded-lg bg-background hover:bg-secondary/5 transition-colors group"
+              className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-secondary/10 transition-all group hover-lift border border-border/30 hover:border-secondary/50"
             >
-              <div className="bg-secondary text-secondary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform">
+              <div className="bg-secondary text-secondary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform shadow-glow">
                 <Phone className="h-6 w-6" />
               </div>
               <div>
@@ -48,19 +50,19 @@ const Contact = () => {
               href="https://www.linkedin.com/in/veni-bandreddi"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-4 rounded-lg bg-background hover:bg-accent/5 transition-colors group"
+              className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-primary/10 transition-all group hover-lift border border-border/30 hover:border-primary/50"
             >
-              <div className="bg-accent text-accent-foreground p-3 rounded-lg group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-accent text-primary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform shadow-glow">
                 <Linkedin className="h-6 w-6" />
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">LinkedIn</p>
-                <p className="font-semibold text-accent">linkedin.com/in/veni-bandreddi</p>
+                <p className="font-semibold gradient-text">linkedin.com/in/veni-bandreddi</p>
               </div>
             </a>
             
-            <div className="flex items-center gap-4 p-4 rounded-lg bg-background">
-              <div className="bg-primary/10 text-primary p-3 rounded-lg">
+            <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 border border-border/30">
+              <div className="bg-primary/20 text-primary p-3 rounded-lg">
                 <MapPin className="h-6 w-6" />
               </div>
               <div>
@@ -73,7 +75,7 @@ const Contact = () => {
           <div className="flex justify-center">
             <Button 
               size="lg"
-              className="shadow-glow"
+              className="bg-gradient-accent hover:opacity-90 text-primary-foreground shadow-glow-lg hover:shadow-glow transition-all hover-lift"
               asChild
             >
               <a href="/Veni_Bandreddi_Resume.pdf" download>
