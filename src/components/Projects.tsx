@@ -1,8 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Lightbulb, TrendingUp, Users, FileText } from "lucide-react";
+import { Lightbulb, TrendingUp, Users, FileText, Trophy } from "lucide-react";
 
 const projects = [
+  {
+    title: "Apex Computing Marketplace Simulation – MGMT 696 Capstone Project",
+    role: "Strategic Leadership",
+    location: "Eastern Michigan University",
+    period: "Jan 2025 – Apr 2025",
+    icon: Trophy,
+    description: "Executed strategic leadership of a virtual tech company across 8 competitive quarters, achieving #1 overall performance in financial, marketing, and operational metrics.",
+    achievements: [
+      "30% ROI, outperforming all competitors",
+      "15% boost in gross margin through analytics",
+      "20% increase in customer satisfaction",
+      "Double-digit revenue growth via market penetration",
+    ],
+    tags: ["Strategic Leadership", "Data Analytics", "Market Strategy", "Financial Management"],
+  },
   {
     title: "Advertising Simulation with Stukent Mimic Pro",
     role: "Simternship - Virtual Intern",
