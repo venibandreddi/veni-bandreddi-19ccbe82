@@ -11,13 +11,13 @@ const About = () => {
         </h2>
         <Card className="p-8 md:p-12 shadow-card hover-lift hover-glow gradient-card border border-border/50 backdrop-blur-sm animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-6">
-            I am a talented and ambitious professional pursuing an <span className="font-semibold gradient-text">MBA in Marketing from Eastern Michigan University</span>, with a proven track record of delivering exceptional results across marketing, operations, and project management domains.
+            As a talented and ambitious professional with an <span className="font-semibold gradient-text">MBA in Marketing from Eastern Michigan University</span>, I bring a proven track record of delivering exceptional results across marketing, operations, and project management domains.
           </p>
           <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-6">
-            My journey combines strategic thinking with creative execution—from increasing online visibility by <span className="font-semibold text-primary">40%</span> through targeted digital campaigns to optimizing ad spend and driving <span className="font-semibold text-primary">20%+ engagement growth</span>. I thrive in dynamic environments where analytical rigor meets innovative problem-solving.
+            My expertise lies in <span className="font-semibold text-primary">data-driven strategies, digital marketing, and business development</span>. I've increased online visibility by <span className="font-semibold text-primary">40%</span> through targeted campaigns, optimized ad spend to reduce waste by <span className="font-semibold text-primary">15%</span>, and driven <span className="font-semibold text-primary">20%+ engagement growth</span> across multiple platforms.
           </p>
           <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-            Whether it's developing comprehensive marketing strategies, managing cross-functional teams, or leveraging data analytics to drive business growth, I bring <span className="font-semibold gradient-text">versatility, leadership, and an unwavering commitment to excellence</span>. I'm ready to take on any challenge and transform it into an opportunity for success.
+            I thrive in environments where <span className="font-semibold gradient-text">creativity and analytical thinking intersect</span>. Whether developing comprehensive marketing strategies, leading cross-functional teams, or leveraging advanced analytics, I combine versatility, leadership, and an unwavering commitment to excellence. I'm ready to achieve big results and transform any challenge into an opportunity for success.
           </p>
         </Card>
       </div>

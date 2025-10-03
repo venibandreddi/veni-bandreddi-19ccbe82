@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          Hi, I'm <span className="gradient-text">Veni Bandreddi</span>
+          I am <span className="gradient-text">Veni Bandreddi</span>
         </h1>
         
         <div className="flex flex-wrap justify-center gap-3 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -25,16 +25,15 @@ const Hero = () => {
             Marketing Strategist
           </Badge>
           <Badge variant="outline" className="text-base px-4 py-2 border-secondary/30 hover:border-secondary hover:bg-secondary/10 transition-all">
-            Operations Manager
+            Business Professional
           </Badge>
           <Badge variant="outline" className="text-base px-4 py-2 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all">
-            Data Analyst
+            Data-Driven Leader
           </Badge>
         </div>
         
-        <p className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.3s' }}>
-          MBA Graduate with expertise in marketing strategy, operations management, and data-driven decision making. 
-          Proven track record of driving growth and delivering measurable results.
+        <p className="text-xl md:text-2xl text-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          A marketing strategist and business professional with an <span className="font-semibold gradient-text">MBA in Marketing from Eastern Michigan University</span>. I am passionate about data-driven strategies, digital marketing, and business development, and I thrive in environments where <span className="font-semibold text-primary">creativity and analytical thinking intersect</span>.
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
