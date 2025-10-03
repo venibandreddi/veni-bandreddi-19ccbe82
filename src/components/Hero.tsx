@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.3s' }}>
-          A marketing strategist and business professional with an <span className="font-semibold gradient-text">MBA in Marketing from Eastern Michigan University</span>. I am passionate about data-driven strategies, digital marketing, and business development, and I thrive in environments where <span className="font-semibold text-primary">creativity and analytical thinking intersect</span>.
+          A marketing strategist and business professional with an <span className="font-semibold gradient-text">MBA in Marketing from Eastern Michigan University</span>. I blend <span className="font-semibold text-primary">data-driven insights with creative strategy</span> to drive <span className="font-semibold text-secondary">measurable results</span>.
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
