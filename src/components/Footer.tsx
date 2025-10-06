@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -39,13 +39,6 @@ const Footer = () => {
               >
                 <Mail className="h-4 w-4" />
                 venibandreddi@gmail.com
-              </a>
-              <a 
-                href="tel:+17343838389"
-                className="flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                (734) 383-8389
               </a>
               <a 
                 href="https://www.linkedin.com/in/veni-bandreddi"

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin, MapPin, Download } from "lucide-react";
+import { Mail, Linkedin, MapPin, Download } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -30,19 +30,6 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
                 <p className="font-semibold text-primary">venibandreddi@gmail.com</p>
-              </div>
-            </a>
-            
-            <a 
-              href="tel:+17343838389"
-              className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-secondary/10 transition-all group hover-lift border border-border/30 hover:border-secondary/50"
-            >
-              <div className="bg-secondary text-secondary-foreground p-3 rounded-lg group-hover:scale-110 transition-transform shadow-glow">
-                <Phone className="h-6 w-6" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Phone</p>
-                <p className="font-semibold text-secondary">(734) 383-8389</p>
               </div>
             </a>
             
