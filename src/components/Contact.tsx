@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, MapPin, Download } from "lucide-react";
+import { Mail, Linkedin, Download } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -47,16 +47,6 @@ const Contact = () => {
                 <p className="font-semibold gradient-text">linkedin.com/in/veni-bandreddi</p>
               </div>
             </a>
-            
-            <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 border border-border/30">
-              <div className="bg-primary/20 text-primary p-3 rounded-lg">
-                <MapPin className="h-6 w-6" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Location</p>
-                <p className="font-semibold">Michigan, United States</p>
-              </div>
-            </div>
           </div>
           
           <div className="flex justify-center">

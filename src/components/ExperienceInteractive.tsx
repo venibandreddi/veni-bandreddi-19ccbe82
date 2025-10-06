@@ -8,7 +8,6 @@ const experiences = [
   {
     company: "EliteUS Software Solutions LLC",
     role: "Business Development Trainee",
-    location: "Edison, New Jersey",
     period: "Aug 2025 – Present",
     icon: Briefcase,
     achievements: [
@@ -21,7 +20,6 @@ const experiences = [
   {
     company: "SUKUMAR WRITINGS PVT. LTD.",
     role: "Digital Marketing Specialist",
-    location: "Hyderabad, India",
     period: "Feb 2020 – Present",
     icon: TrendingUp,
     achievements: [
@@ -38,7 +36,6 @@ const experiences = [
   {
     company: "Disability Resource Center - EMU",
     role: "Computer Lab Assistant",
-    location: "Ypsilanti, Michigan",
     period: "Feb 2023 – Apr 2025",
     icon: Users,
     achievements: [
@@ -52,7 +49,6 @@ const experiences = [
   {
     company: "Artemis Foundation",
     role: "HR Intern",
-    location: "Hyderabad, India",
     period: "May 2021 – Aug 2021",
     icon: Heart,
     achievements: [
@@ -137,7 +133,7 @@ const ExperienceInteractive = () => {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold gradient-text mb-1">{exp.company}</h3>
                     <p className="text-lg text-primary font-semibold mb-1">{exp.role}</p>
-                    <p className="text-sm text-muted-foreground">{exp.location} • {exp.period}</p>
+                    <p className="text-sm text-muted-foreground">{exp.period}</p>
                   </div>
                 </div>
 

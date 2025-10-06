@@ -6,13 +6,11 @@ const educationData = [
     school: "Eastern Michigan University",
     degree: "Master's in Business Administration",
     concentration: "Marketing",
-    location: "Ypsilanti, Michigan",
     period: "Jan 2023 – Apr 2025",
   },
   {
     school: "ICFAI Business School, IFHE University",
     degree: "Bachelor's in Business Administration",
-    location: "Hyderabad, Telangana",
     period: "Aug 2019 – Jun 2022",
   },
 ];
@@ -43,7 +41,6 @@ const Education = () => {
                   {edu.concentration && (
                     <p className="text-secondary font-medium mb-2">Concentration: {edu.concentration}</p>
                   )}
-                  <p className="text-muted-foreground mb-1">{edu.location}</p>
                   <p className="text-sm text-muted-foreground">{edu.period}</p>
                 </div>
               </div>
